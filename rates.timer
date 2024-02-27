@@ -1,0 +1,15 @@
+[Unit]
+Description=Extraccion de la tasa del dia por el BCV
+
+[Service]
+ExecStart=/<ruta_de_lib>/usr/bin/scrapy runspider /<ruta_del_script>/extraccion.py
+
+[Unit]
+Description=Se ejecutara todos los dias a media noche
+
+[Timer]
+OnCalendar=*-*-* 00:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
