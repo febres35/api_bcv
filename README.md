@@ -8,16 +8,18 @@
 ____#######################################____
 
 # Install lib
+
  - pip install -r requirements.txt
 
-___######################################___
+___########################################____
+
 # Systemd Config
 
  - Asigne  la ruta de la lib Scrapy en el archivo rates.timer
 
  - Asigne la ruta de  archivo extraccion.py en el archivo rates.timer
 
- - Ubicacion del servicio
+ - Ubicación del servicio
   * Coloque el archivo rates.time en la ruta
     path = /etc/systemd/system/
     (En debian esta es la ruta, en otro S.O. puede variar)
@@ -26,10 +28,10 @@ ___######################################___
    * sudo systemctl enable extraccion.timer
    * sudo systemctl start extraccion.timer
   
-  
-_____###################################_____
+_____######################################_____
+
 # Test
- - En caso de que lo quiera probar,
+ - Si deasea probar sin systemd,
  luego de instalar las dependencias
  ejecute el comando:
     
