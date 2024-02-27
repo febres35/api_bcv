@@ -1,4 +1,4 @@
-# Systemas 
+# Sistemas 
 
 - Debian 12
 - Python 3.11.2
